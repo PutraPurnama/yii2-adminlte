@@ -30,6 +30,11 @@ class M180713020411Init extends Migration
             'created_at' => $this->integer()->notNull(),
             'updated_at' => $this->integer()->notNull(),
         ], $tableOptions);
+
+        $this->createTable('{{%user_role}}', [
+            'id' => $this->primaryKey(),
+            'nama' => $this->string()->notNull()->unique(),
+        ]);
     }
 
     /**

@@ -11,16 +11,16 @@ $config = [
     'timeZone' => 'Asia/Jakarta',
     'container' => [
         'definitions' => [
-            DataColumn::class => [
+            \yii\grid\DataColumn::class => [
                 'headerOptions' => ['style' => 'text-align:center'],
                 'contentOptions' => ['style' => 'text-align:center'],
                 'format' => 'raw',
             ],
-            SerialColumn::class => [
+            \yii\grid\SerialColumn::class => [
                 'headerOptions' => ['style' => 'text-align:center'],
                 'contentOptions' => ['style' => 'text-align:center'],
             ],
-            Select2::class => [
+            \kartik\select2\Select2::class => [
                 'pluginOptions' => [
                     'allowClear' => true,
                 ],
