@@ -40,7 +40,7 @@ use yii\bootstrap\ActiveForm;
 
 <div class="<?= Inflector::camel2id(StringHelper::basename($generator->modelClass)) ?>-form box box-primary">
 
-    <div class="box-header">
+    <div class="box-header with-border">
         <h3 class="box-title">Form <?= Inflector::camel2words(StringHelper::basename($generator->modelClass)); ?></h3>
     </div>
 	<div class="box-body">

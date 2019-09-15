@@ -22,7 +22,7 @@ use yii\helpers\Html;
                 <li class="dropdown user user-menu">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                         <img src="<?= Yii::getAlias('@web').'/images/logo.png'; ?>" class="img-circle" style="width: 16px" alt="User Image"/>
-                        <span class="hidden-xs">NAMA<?php // Yii::$app->user->identity->username ?></span>
+                        <span class="hidden-xs"><?=@Yii::$app->user->identity->username ?></span>
                     </a>
                     <ul class="dropdown-menu">
                         <!-- User image -->

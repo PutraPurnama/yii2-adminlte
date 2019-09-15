@@ -23,7 +23,7 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="<?= Inflector::camel2id(StringHelper::basename($generator->modelClass)) ?>-view box box-primary">
 
-    <div class="box-header">
+    <div class="box-header with-border">
         <h3 class="box-title">Detail <?= Inflector::camel2words(StringHelper::basename($generator->modelClass)); ?></h3>
     </div>
 
